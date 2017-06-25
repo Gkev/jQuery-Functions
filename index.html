@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>jQueryFunctions</title>
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#bye').click(function(){
+				$('img').hide();
+			})
+
+			$('.cback').click(function(){
+				$('img').show();
+			})
+
+
+			$('.in').click(function()
+			{
+				$('p').fadeIn("slow", function(){
+
+				});
+			});
+
+			$('#out').click(function(){
+				$('p').fadeOut('slow', function(){
+
+				});
+			});
+
+			
+
+			$('cback').before(document.createTextNode('<h2>Move over</h2>'));
+
+			$('in').after('<button>Hi</button>');
+
+			$('p').append('<p>yes</p>');
+		});
+	</script>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<p>I love to code!</p>
+	<p>Do you love coding?</p>
+	<button id='bye'>Ha ha, you can't see me!</button>
+	<button class='cback'>Now you can.</button>
+	<img src="content_img1.png" alt="">
+	<h1>Click me!</h1>
+	<h1>Hi my name is ?</h1>
+	<button class='in'>Push Me.</button>
+	<button id='out'>Try Me.</button>
+	<br><br>
+	<div>HELLO</div>
+	
+</body>
+</html>
